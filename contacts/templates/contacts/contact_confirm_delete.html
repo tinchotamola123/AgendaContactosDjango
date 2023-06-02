@@ -1,0 +1,42 @@
+{% extends 'contacts/base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="px-5">
+        <h1>Eliminar Contacto</h1>
+    </div>
+
+    <div class="alert alert-danger mt-5 text-center mx-auto" style="max-width: 350px;">
+        Estas seguro que deseas eliminar 
+        <span class="fw-bold">{{ contact.email }}</span> ?
+    
+        <form method="post" class="mt-3">
+            {% csrf_token %}
+        
+        <a href="{% url 'contact_list' %}" class="btn btn-ligth">
+            Cancelar
+        </a>
+        <button class="btn btn-danger">
+            Si, Eliminar
+        </button>
+        </form>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+{% endblock %}
+        

@@ -1,0 +1,35 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Agenda Virtual</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+<body style="background-color: rgb(221, 218, 218);">
+    <div class="container" style="background-color: rgb(224, 220, 220); border-radius: 20px;">
+        <div class="px-5 py-3 m-5 shadow rounded text-center" style="border: solid 1px black;">
+            <h1 class="fw-bold text-primary">Bienvenido a Mi Agenda</h1>
+            <h2>Con esta aplicacion podrás gestinoar tu agenda virtual.</h2>
+            <p>Consulta, crea, actualiza y elimina tus contactos de forma fácil y segura.</p>
+        </div>
+    
+        
+        {% block content %}
+        {% endblock %}
+        
+
+        <div class="px-5 m-1 text-center ">
+            <h6 class="m-1">By Martin Tamola</h6>
+        </div>
+    
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+</body>
+</html>
